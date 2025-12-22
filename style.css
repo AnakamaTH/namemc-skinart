@@ -40,8 +40,8 @@ input[type="file"] {
 
 #mapPreview {
   margin: 1rem 0;
-  width: 288px; /* 72 * 4 for scaling */
-  height: 96px; /* 24 * 4 for scaling */
+  width: 288px;
+  height: 96px;
   image-rendering: pixelated;
   border: 2px solid white;
 }
