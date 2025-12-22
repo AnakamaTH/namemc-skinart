@@ -48,7 +48,7 @@ document.getElementById('generateBtn').onclick = async () => {
   status.classList.remove('success');
 
   if (!mapFile) {
-    alert("Please upload a map image!");
+    alert("Please upload a map image.");
     return;
   }
 
@@ -100,9 +100,9 @@ document.getElementById('generateBtn').onclick = async () => {
 
   zip.generateAsync({ type: 'blob' }).then(content => {
     saveAs(content, 'namemc_skinart.zip');
-    status.textContent = 'Skins generated successfully';
+    status.textContent = 'Skins generated successfully.';
     status.classList.add('success');
   });
 };
 
-// Not entirely written by me
+// Not entirely written by me.
