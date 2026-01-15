@@ -1,4 +1,3 @@
-
 const gifs = [
   "https://i.pinimg.com/originals/e5/a1/7e/e5a17eb79c5472b5fea8ab36282f3696.gif",
   "https://i.pinimg.com/originals/99/f4/36/99f43636e89075b308a720bff365b132.gif",
