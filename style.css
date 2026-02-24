@@ -1,13 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/minecraftia');
+@import url('https://netherteam.pages.dev/src/css/style.css');
 
 body {
-  margin: 0;
-  font-family: 'Minecraftia', sans-serif;
-  background: #000;
-  color: white;
   text-align: center;
-  position: relative;
-  overflow-x: hidden;
 }
 
 .overlay {
@@ -36,9 +30,15 @@ label {
 
 input[type="file"] {
   margin: 0.5rem 0 1rem;
+  font-size: 16px;
+  background-color: #444;
+  color: white;
+  border: 2px solid white;
 }
 
 #mapPreview {
+  display: block;
+  margin-top: 1rem;
   margin: 1rem 0;
   width: 288px;
   height: 96px;
@@ -47,15 +47,12 @@ input[type="file"] {
 }
 
 button {
-  font-family: 'Minecraftia', sans-serif;
   font-size: 16px;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
-  cursor: pointer;
   background-color: #444;
   color: white;
   border: 2px solid white;
-  transition: background 0.2s;
 }
 
 button:hover {
@@ -107,4 +104,15 @@ footer {
   display: block;
   margin-bottom: 0.25rem;
   font-weight: 600;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h2 {
+ text-align: center;
 }

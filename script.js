@@ -67,10 +67,8 @@ document.getElementById('generateBtn').onclick = async () => {
   }
 
   zip.generateAsync({ type: 'blob' }).then(content => {
-    saveAs(content, 'namemc_skinart.zip');
+    saveAs(content, 'namemc-skinart.zip');
     status.textContent = 'Skins generated successfully.';
     status.classList.add('success');
   });
 };
-
-// Not entirely written by me.
