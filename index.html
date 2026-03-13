@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NameMC SkinArt Generator</title>
+  <meta property="og:title" content="NameMC SkinArt Generator">
+  <meta property="og:description" content="Generate a NameMC skinart using a base skin and map image.">
+  <meta property="og:image" content="https://s.namemc.com/2d/skin/face.png?id=170217c0780b9ec8&scale=4">
+  <meta property="og:url" content="https://skinart.anakama.xyz/">
+  <meta name="keywords" content="NameMC, skinart, NameMC Skinart, NameMC Skinart Generator, Minecraft Skins, skins">
+  <link rel="icon" href="https://anakama.xyz/assets/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+<noscript>
+  <div class="no-js-warning">
+    <p><strong>JavaScript is disabled.</strong></p>
+	<p>This site requires JavaScript to work.</p>	
+  </div>
+</noscript>
+	  <div>
+    <h1>NameMC SkinArt Generator</h1>
+    <hr>
+    </div>
+  <div class="container">
+    <label>Base Skin (optional, 64×64 PNG):</label>
+    <input type="file" id="baseSkinInput" accept="image/png" />
+    <label>Map Image (required, 72×24 PNG - 9×3 grid):</label>
+    <input type="file" id="mapInput" accept="image/png" />
+    <hr>
+    <button id="generateBtn">Generate Skins</button>
+    </div>
+    <hr>
+	<div class="container">
+    <img id="mapPreview" src="" alt="Map Preview" />
+	
+    <div id="status"></div>
+
+    <div class="usage">
+      <h2>How to Use</h2>
+      <ul>
+        <li>Upload a base skin (optional).</li>
+        <li>Upload a map image (72x24 PNG – 9×3 grid.)</li>
+        <li>Click <strong>Generate Skins</strong> to download a ZIP.</li>
+        <li>Equip skins from <strong>skin_27</strong> (preview) to <strong>skin_1</strong>.</li>
+      </ul>
+    </div>
+	
+    <footer>
+      <p>Build: <a href="https://github.com/AnakamaTH/namemc-skinart/commit/b0ff04686cc8679876c1b5a2c98b277c430980b9">b0ff046</a></p>
+      <p>&copy; Anakama 2026 — Not affiliated with NameMC or Mojang.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

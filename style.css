@@ -1,0 +1,118 @@
+@import url('https://netherteam.pages.dev/src/css/style.css');
+
+body {
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  margin: 0.5rem 0 1rem;
+  font-size: 16px;
+  background-color: #444;
+  color: white;
+  border: 2px solid white;
+}
+
+#mapPreview {
+  display: block;
+  margin-top: 1rem;
+  margin: 1rem 0;
+  width: 288px;
+  height: 96px;
+  image-rendering: pixelated;
+  border: 2px solid white;
+}
+
+button {
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #444;
+  color: white;
+  border: 2px solid white;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+#status {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#status.success {
+  color: #00ff00;
+}
+
+.usage {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  margin-top: 2rem;
+  border: 1px solid white;
+  text-align: left;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.no-js-warning {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid #e5533d;
+  background-color: #fff5f2;
+  color: #5a1d14;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-radius: 4px;
+}
+
+.no-js-warning strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h2 {
+ text-align: center;
+}
