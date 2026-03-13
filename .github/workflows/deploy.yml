@@ -1,4 +1,24 @@
-- name: Inject commit SHA
-  run: |
-    echo "COMMIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
-    sed -i "s/{{COMMIT_SHA}}/$COMMIT_SHA/g" index.html
+name: Inject commit
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Inject commit SHA
+        run: |
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          FULL_SHA=$(git rev-parse HEAD)
+          sed -i "s/{{COMMIT_SHA}}/$SHORT_SHA/g" index.html
+          sed -i "s/{{COMMIT_SHA_FULL}}/$FULL_SHA/g" index.html
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./
