@@ -1,0 +1,4 @@
+- name: Inject commit SHA
+  run: |
+    echo "COMMIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+    sed -i "s/{{COMMIT_SHA}}/$COMMIT_SHA/g" index.html
